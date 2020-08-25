@@ -1,0 +1,48 @@
+@font-face{
+  font-family: 'Exo';
+  src: url('./../src/common/fonts/Exo2.0-Thin.otf');
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../src/common/images/bg.jpg");
+  background-size: auto 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .mainHeader{
+    color: white;
+    font-family: Exo;
+    font-size: 3vw;
+    margin-top: -2vw;
+    padding-bottom: 2vw;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .mainHeader{
+    font-size: 30px !important;
+    padding-bottom: 6vw !important;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  .mainHeader {
+    font-size: 25px !important;
+    padding-bottom: 2vw !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mainHeader{
+    margin-top: 2vh !important;
+    font-size: 25px !important;
+  }
+  .app {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+}
